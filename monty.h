@@ -51,4 +51,15 @@ void monty_pall(stack_t **stack, unsigned int line_num);
 
 /*Monty_free*/
 void free_stack(stack_t **stack);
+
+/*monty_run*/
+int monty_run(FILE *fd);
+char **tokening(char *line, char *delim);
+int empty_line(char *line, char *delims);
+
+/*monty_operation1*/
+void monty_pint(stack_t **stack, unsigned int line_num);
+void monty_pop(stack_t **stack, unsigned int line_num);
+void monty_swap(stack_t **stack, unsigned int line_num);
+void monty_add(stack_t **stack, unsigned int line_num);
 #endif
