@@ -39,4 +39,7 @@ typedef struct instruction_s
 
 int main(int ac, char **av);
 
+int usage_error(int flag);
+int open_error(char *filename);
+int f_errors(int flag, unsigned int line_num);
 #endif
