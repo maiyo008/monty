@@ -14,10 +14,13 @@ int execute(char **token, stack_t **stack, unsigned int line_num)
 
 	instruction_t op[] = {
 		{"pall", monty_pall},
-		{"push", monty_push}
+		{"pint", monty_push},
+		{"pop", monty_pop},
+		{"swap", monty_swap},
+		{"add", monty_add},
 	}
 
-	for (i = 0; i < 2; i++)
+	for (i = 0; i < 5; i++)
 	{
 		if (strcmp(op[i].opcode, token[0]) == 0)
 		{
