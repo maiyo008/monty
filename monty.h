@@ -39,7 +39,16 @@ typedef struct instruction_s
 
 int main(int ac, char **av);
 
+/*monty_errors*/
 int usage_error(int flag);
 int open_error(char *filename);
 int f_errors(int flag, unsigned int line_num);
+
+/*monty_opcode_exec*/
+int execute(char **token, stack_t **stack, unsigned int line_num);
+int monty_push(stack_t **stack, char **token, unsigned int line_num);
+void monty_pall(stack_t **stack, unsigned int line_num);
+
+/*Monty_free*/
+void free_stack(stack_t **stack);
 #endif
