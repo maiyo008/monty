@@ -1,6 +1,7 @@
 #ifndef _MONTY_H_
 #define _MONTY_H_
 
+#define  _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -48,6 +49,7 @@ int f_errors(int flag, unsigned int line_num);
 int execute(char **token, stack_t **stack, unsigned int line_num);
 int monty_push(stack_t **stack, char **token, unsigned int line_num);
 void monty_pall(stack_t **stack, unsigned int line_num);
+int monty_pushq(stack_t **stack, char **token, unsigned int line_num);
 
 /*Monty_free*/
 void free_stack(stack_t **stack);
